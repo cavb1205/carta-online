@@ -1,0 +1,28 @@
+---
+const API_URL = import.meta.env.API_URL;
+
+
+const response = await fetch(`${API_URL}/api/home?populate=*`).then((res) => res.json());
+
+console.log(response);
+
+const { title, description,cover,logo } = response.data;
+---
+<section>
+    <div class="mb-2">
+        <img src=`${API_URL}/${cover.url}` 
+            alt={title} 
+            class=" object-cover h-28 md:h-48 w-full rounded-b-lg"  
+        />
+    </div>    
+    <div class="flex justify-evenly items-center gap-2">
+        <img src=`${API_URL}/${logo.url}`
+            alt="logo stefy food"
+            class="w-20 h-20 md:w-40 md:h-40 rounded-full shadow-lg"
+        />
+        <div>
+            <h1 class="text-primary font-extrabold text-3xl md:text-5xl my-2">{title}</h1>
+            <h3 class="text-primary text-base md:text-lg ">{description}</h3>
+        </div>
+    </div>
+</section>
