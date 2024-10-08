@@ -6,10 +6,10 @@ import Card from "../components/Card.astro";
 
 ---
 
-<section class="flex flex-col md:flex-row md:flex-wrap md:justify-between ">
+<section class="flex flex-col md:flex-row md:flex-wrap md:justify-between mt-3 ">
 
     {PRODUCTOS.map((producto)=>(
-        <Card title={producto.nombre} description={producto.descripcion} price={producto.precio} />
+        <Card title={producto.nombre} description={producto.descripcion} price={producto.precio} image={producto.imagen} />
     ))
     }
     
