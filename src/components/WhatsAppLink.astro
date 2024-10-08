@@ -1,0 +1,11 @@
+
+---
+const WHATSAPP_NUMBER = "56934880568"
+const WHATSAPP_MESSAGE = 'Hola Stefy Food, me gustaría hacer un pedido.'
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
+---
+
+
+<a href={WHATSAPP_URL} target="_blank"  class="">
+    <img src="/public/whatsapp.svg" alt="whatsapp" class="fixed bottom-5 right-5 w-12 h-12 rounded-full shadow-lg hover:scale-125 hover:opacity-75" />
+</a>
