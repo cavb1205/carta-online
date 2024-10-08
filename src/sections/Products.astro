@@ -1,8 +1,16 @@
 ---
+import {PRODUCTOS} from "../data/products.js";
 import Card from "../components/Card.astro";
+
+
+
 ---
 
-<section class="flex md:flex-row md:justify-evenly">
-    <Card title="Hamburguesa" href="#" body="hamburguesa" />
-    <Card title="Hamburguesa" href="#" body="hamburguesa" />
+<section class="flex flex-col md:flex-row md:flex-wrap md:justify-between ">
+
+    {PRODUCTOS.map((producto)=>(
+        <Card title={producto.nombre} description={producto.descripcion} price={producto.precio} />
+    ))
+    }
+    
 </section>

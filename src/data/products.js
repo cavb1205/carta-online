@@ -1,0 +1,58 @@
+export const PRODUCTOS = [
+    {
+      id: 1,
+      nombre: "Arepa Reina Pepiada",
+      descripcion: "Arepa rellena de una mezcla cremosa de pollo desmenuzado con aguacate y mayonesa, servida caliente y crujiente.",
+      precio: 3500,
+      categoria: "Arepas",
+      ingredientesExtras: ["Queso amarillo", "Tocineta", "Aguacate", "Salsa de ajo"],
+    },
+    {
+      id: 2,
+      nombre: "Patacón de Carne Mechada",
+      descripcion: "Plátano frito crujiente relleno con carne mechada, queso rallado, lechuga, tomate, y salsas tradicionales.",
+      precio: 5.00,
+      categoria: "Patacones",
+      ingredientesExtras: ["Tocineta", "Queso amarillo", "Aguacate", "Huevo frito"],
+    },
+    {
+      id: 3,
+      nombre: "Cachapa con Queso de Mano",
+      descripcion: "Dulce y esponjosa cachapa hecha de maíz tierno, acompañada de queso de mano fresco, fundido entre dos capas de maíz.",
+      precio: 4.50,
+      categoria: "Cachapas",
+      ingredientesExtras: ["Jamón", "Tocineta", "Queso amarillo", "Chorizo"],
+    },
+    {
+      id: 4,
+      nombre: "Hamburguesa Venezolana",
+      descripcion: "Jugosa hamburguesa con carne de res, queso, jamón, huevo frito, papitas crujientes, y salsas venezolanas, servida en pan suave.",
+      precio: 6.00,
+      categoria: "Hamburguesas",
+      ingredientesExtras: ["Tocineta", "Queso cheddar", "Aguacate", "Salsa de ajo"],
+    },
+    {
+      id: 5,
+      nombre: "Empanada de Queso",
+      descripcion: "Empanada frita rellena de queso blanco fresco, con una masa crujiente y dorada.",
+      precio: 1.50,
+      categoria: "Empanadas",
+      ingredientesExtras: ["Salsa de ajo", "Guasacaca", "Queso rallado"],
+    },
+    {
+      id: 6,
+      nombre: "Tequeños",
+      descripcion: "Palitos de queso envueltos en una masa suave y fritos hasta quedar dorados, un clásico de la comida venezolana.",
+      precio: 2.00,
+      categoria: "Entradas",
+      ingredientesExtras: ["Salsa de ajo", "Guasacaca", "Queso extra"],
+    },
+    {
+      id: 7,
+      nombre: "Perro Caliente Venezolano",
+      descripcion: "Hot dog estilo venezolano con salchicha, repollo, papitas crujientes, queso rallado y una combinación de salsas tradicionales.",
+      precio: 3.00,
+      categoria: "Perros Calientes",
+      ingredientesExtras: ["Queso amarillo", "Tocineta", "Aguacate", "Huevo frito"],
+    }
+  ];
