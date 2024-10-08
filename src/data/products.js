@@ -1,7 +1,7 @@
 export const PRODUCTOS = [
     {
         id: 1,
-        imagen: "/perro-caliente.jpeg",
+        imagen: "perro-caliente.jpeg",
         nombre: "Perro Caliente Normal",
         descripcion: "Hot dog estilo venezolano con salchicha, repollo, papitas crujientes, queso rallado y una combinación de salsas tradicionales.",
         precio: 2000,
@@ -10,7 +10,7 @@ export const PRODUCTOS = [
       },
       {
         id: 2,
-        imagen: "/perro-caliente.jpeg",
+        imagen: "perro-caliente.jpeg",
         nombre: "Perro Caliente Especial",
         descripcion: "Hot dog estilo venezolano con salchicha, opción de pollo desmenuzado, tocino crujiente o carne mechada, acompañado de repollo, papitas crujientes, queso rallado y una combinación de salsas tradicionales.",
         precio: 3000,
@@ -19,7 +19,7 @@ export const PRODUCTOS = [
       },
       {
         id: 3,
-        imagen: "/perro-caliente.jpeg",
+        imagen: "perro-caliente.jpeg",
         nombre: "Perro Caliente Mixto",
         descripcion: "Hot dog estilo venezolano con salchicha, una mezcla de pollo desmenuzado y carne mechada, acompañado de repollo, papitas crujientes, queso rallado y una combinación de salsas tradicionales.",
         precio: 4000,
@@ -28,7 +28,7 @@ export const PRODUCTOS = [
       },
       {
         id: 4,
-        imagen: "/hamburguesa.jpeg",
+        imagen: "hamburguesa.jpeg",
         nombre: "Hamburguesa Especial",
         descripcion: "Deliciosa hamburguesa con opción de pollo, carne de res jugosa o carne mechada, acompañada de lechuga fresca, tomate, queso, papitas crujientes y salsas tradicionales. Todo servido en un pan suave y tostado.",
         precio: 5000,
@@ -37,7 +37,7 @@ export const PRODUCTOS = [
       },
       {
         id: 5,
-        imagen: "/hamburguesa-chuleta.jpg",
+        imagen: "hamburguesa-chuleta.jpg",
         nombre: "Hamburguesa de Chuleta Ahumada",
         descripcion: "Exquisita hamburguesa con chuleta ahumada, acompañada de lechuga fresca, rodajas de tomate, queso fundido, papitas crujientes y una mezcla de salsas tradicionales. Servida en un suave pan tostado para un sabor único.",
         precio: 6000,
@@ -46,7 +46,7 @@ export const PRODUCTOS = [
       },
       {
         id: 6,
-        imagen: "/hamburguesa-mixta.jpeg",
+        imagen: "hamburguesa-mixta.jpeg",
         nombre: "Hamburguesa Mixta",
         descripcion: "Hamburguesa doble con carne de res jugosa y filete de pollo a la parrilla, acompañada de lechuga fresca, tomate, queso derretido, papitas crujientes y una mezcla de salsas tradicionales. Servida en un pan suave y tostado.",
         precio: 7000,
@@ -55,7 +55,7 @@ export const PRODUCTOS = [
       },
       {
           id: 7,
-          imagen: "/arepa.jpg",
+          imagen: "arepa.jpg",
           nombre: "Arepa con Dos Rellenos",
           descripcion: "Arepa tradicional venezolana rellena con la combinación de dos ingredientes a elección: pollo desmenuzado, carne mechada, huevo frito, queso o tocineta crujiente. Servida caliente y crujiente, ideal para un desayuno o almuerzo completo.",
           precio: 2000,
@@ -65,7 +65,7 @@ export const PRODUCTOS = [
         },
     {
       id: 8,
-      imagen: "/cachapa-cover.jpg",
+      imagen: "cachapa-cover.jpg",
       nombre: "Cachapa con Queso de Mano",
       descripcion: "Dulce y esponjosa cachapa hecha de maíz tierno, acompañada de queso de mano fresco, fundido entre dos capas de maíz.",
       precio: 5000,
@@ -74,7 +74,7 @@ export const PRODUCTOS = [
     },
     {
         id: 9,
-        imagen: "/cachapa-cerdo.jpeg",
+        imagen: "cachapa-cerdo.jpeg",
         nombre: "Cachapa con Carne Mechada o Cerdo",
         descripcion: "Deliciosa cachapa venezolana hecha de maíz tierno, acompañada con la opción de relleno de carne mechada o cerdo, junto con queso fresco derretido. Una combinación perfecta de sabores dulces y salados para disfrutar en cualquier momento.",
         precio: 6000,
@@ -84,7 +84,7 @@ export const PRODUCTOS = [
       },
       {
         id: 10,
-        imagen: "/cachapa-mixta.webp",
+        imagen: "cachapa-mixta.webp",
         nombre: "Cachapa Mixta",
         descripcion: "Cachapa venezolana hecha de maíz tierno, rellena con una combinación de carne mechada y cerdo, acompañada de queso fresco derretido. Una explosión de sabores dulces y salados que satisface todos los antojos.",
         precio: 7000,
@@ -93,7 +93,7 @@ export const PRODUCTOS = [
       },
       {
         id: 11,
-        imagen: "/pepito.jpg",
+        imagen: "pepito.jpg",
         nombre: "Pepito",
         descripcion: "Clásico pepito venezolano con una base de pan suave y relleno de carne de res, pollo o una combinación de ambas. Acompañado de papitas crujientes, queso rallado, lechuga, tomate y una mezcla de salsas tradicionales para darle el toque perfecto.",
         precio: 10000,
@@ -103,7 +103,7 @@ export const PRODUCTOS = [
       },
       {
         id: 12,
-        imagen: "/bebidas.jpg",
+        imagen: "bebidas.jpg",
         nombre: "Bebidas en Lata",
         descripcion: "Refrescantes bebidas en lata para acompañar tu comida. Elige entre una variedad de opciones clásicas como refrescos de Coca Cola, Pepsi, Sprite.",
         precio: 1500,

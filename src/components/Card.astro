@@ -11,7 +11,7 @@ const { title, description, price, image } = Astro.props;
 
 
 	<a href="#" class="flex gap-x-5 border-neutral-400 border-b-2 mt-4 p-1 hover:scale-105 md:max-w-md  ">
-		<img src={image} alt={title} class="w-40 h-40 rounded-lg object-cover" />
+		<img src={`/${image}`} alt={title} class="w-40 h-40 rounded-lg object-cover" />
 		<div>
 			<h2 class="text-primary font-bold text-xl ">
 				{title}			
