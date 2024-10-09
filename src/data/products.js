@@ -65,7 +65,7 @@ export const PRODUCTOS = [
         },
     {
       id: 8,
-      imagen: "/cachapa-cover.jpg",
+      imagen: "cachapa-cover.jpg",
       nombre: "Cachapa con Queso de Mano",
       descripcion: "Dulce y esponjosa cachapa hecha de maíz tierno, acompañada de queso de mano fresco, fundido entre dos capas de maíz.",
       precio: 5000,
