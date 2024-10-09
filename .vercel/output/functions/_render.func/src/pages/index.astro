@@ -1,0 +1,23 @@
+---
+import WhatsAppLink from '../components/WhatsAppLink.astro';
+import Layout from '../layouts/Layout.astro';
+import Footer from '../sections/Footer.astro';
+import Hero from '../sections/Hero.astro';
+import Menu from '../sections/Menu.astro';
+import Products from '../sections/Products.astro';
+import Promo from '../sections/Promo.astro';
+
+// export const prerender = true
+---
+
+<Layout title="Stefy Food">
+	<main class=" md:max-w-5xl mx-auto px-2">
+		<Hero />
+		<Promo />
+		<Products />
+		<Footer />
+		<WhatsAppLink /
+	</main>
+</Layout>
+
+

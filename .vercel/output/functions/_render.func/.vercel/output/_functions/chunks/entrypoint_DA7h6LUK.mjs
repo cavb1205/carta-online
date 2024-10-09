@@ -1,50 +1,14 @@
-import { R as ROUTE_TYPE_HEADER, h as REROUTE_DIRECTIVE_HEADER, A as AstroError, i as i18nNoLocaleFoundInPath, j as ResponseSentError, M as MiddlewareNoDataOrNextCalled, k as MiddlewareNotAResponse, G as GetStaticPathsRequired, I as InvalidGetStaticPathsReturn, l as InvalidGetStaticPathsEntry, n as GetStaticPathsExpectedParams, o as GetStaticPathsInvalidRouteParam, P as PageNumberParamNotFound, p as decryptString, q as createSlotValueFromString, r as renderTemplate, g as renderComponent, D as DEFAULT_404_COMPONENT, N as NoMatchingStaticPathFound, s as PrerenderDynamicEndpointPathCollide, t as ReservedSlotName, u as renderSlotToString, v as renderJSX, w as chunkToString, x as isRenderInstruction, L as LocalsReassigned, y as clientAddressSymbol$1, z as PrerenderClientAddressNotAvailable, C as ClientAddressNotAvailable, S as StaticClientAddressNotAvailable, B as RewriteWithBodyUsed, E as ASTRO_VERSION, F as AstroResponseHeadersReassigned, H as responseSentSymbol$1, J as renderPage, K as REWRITE_DIRECTIVE_HEADER_KEY, O as REWRITE_DIRECTIVE_HEADER_VALUE, Q as renderEndpoint, T as LocalsNotAnObject, U as clientLocalsSymbol, V as REROUTABLE_STATUS_CODES } from './astro/server_BXrsV7v2.mjs';
+import { R as ROUTE_TYPE_HEADER, o as REROUTE_DIRECTIVE_HEADER, A as AstroError, p as i18nNoLocaleFoundInPath, q as ResponseSentError, t as MiddlewareNoDataOrNextCalled, u as MiddlewareNotAResponse, G as GetStaticPathsRequired, v as InvalidGetStaticPathsReturn, w as InvalidGetStaticPathsEntry, x as GetStaticPathsExpectedParams, y as GetStaticPathsInvalidRouteParam, P as PageNumberParamNotFound, z as decryptString, B as createSlotValueFromString, r as renderTemplate, g as renderComponent, D as DEFAULT_404_COMPONENT, C as NoMatchingStaticPathFound, H as PrerenderDynamicEndpointPathCollide, J as ReservedSlotName, K as renderSlotToString, O as renderJSX, Q as chunkToString, S as isRenderInstruction, T as LocalsReassigned, V as clientAddressSymbol$1, W as PrerenderClientAddressNotAvailable, X as ClientAddressNotAvailable, Y as StaticClientAddressNotAvailable, Z as RewriteWithBodyUsed, _ as ASTRO_VERSION, $ as AstroResponseHeadersReassigned, a0 as responseSentSymbol$1, a1 as renderPage, a2 as REWRITE_DIRECTIVE_HEADER_KEY, a3 as REWRITE_DIRECTIVE_HEADER_VALUE, a4 as renderEndpoint, a5 as LocalsNotAnObject, a6 as clientLocalsSymbol, a7 as REROUTABLE_STATUS_CODES } from './astro/server_ONpYfQyl.mjs';
 import { serialize, parse } from 'cookie';
 import { bold, red, yellow, dim, blue } from 'kleur/colors';
-import { g as getActionQueryString, d as deserializeActionResult, e as ensure404Route, a as default404Instance, D as DEFAULT_404_ROUTE, N as NOOP_MIDDLEWARE_FN } from './astro-designed-error-pages_CvwzVKQq.mjs';
+import { g as getActionQueryString, d as deserializeActionResult, e as ensure404Route, a as default404Instance, D as DEFAULT_404_ROUTE, N as NOOP_MIDDLEWARE_FN } from './astro-designed-error-pages_AiqhJxNl.mjs';
 import 'es-module-lexer';
 import 'clsx';
 import buffer from 'node:buffer';
 import crypto$1 from 'node:crypto';
+import { a as appendForwardSlash, j as joinPaths, t as trimSlashes, f as fileExtension, s as slash, p as prependForwardSlash, r as removeTrailingForwardSlash } from './path_CVKLlyuj.mjs';
 import 'fast-glob';
 import nodePath from 'node:path';
-
-function appendForwardSlash(path) {
-  return path.endsWith("/") ? path : path + "/";
-}
-function prependForwardSlash(path) {
-  return path[0] === "/" ? path : "/" + path;
-}
-function removeTrailingForwardSlash(path) {
-  return path.endsWith("/") ? path.slice(0, path.length - 1) : path;
-}
-function removeLeadingForwardSlash(path) {
-  return path.startsWith("/") ? path.substring(1) : path;
-}
-function trimSlashes(path) {
-  return path.replace(/^\/|\/$/g, "");
-}
-function isString(path) {
-  return typeof path === "string" || path instanceof String;
-}
-function joinPaths(...paths) {
-  return paths.filter(isString).map((path, i) => {
-    if (i === 0) {
-      return removeTrailingForwardSlash(path);
-    } else if (i === paths.length - 1) {
-      return removeLeadingForwardSlash(path);
-    } else {
-      return trimSlashes(path);
-    }
-  }).join("/");
-}
-function slash(path) {
-  return path.replace(/\\/g, "/");
-}
-function fileExtension(path) {
-  const ext = path.split(".").pop();
-  return ext !== path ? `.${ext}` : "";
-}
 
 function shouldAppendForwardSlash(trailingSlash, buildFormat) {
   switch (trailingSlash) {
