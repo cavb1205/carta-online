@@ -1,7 +1,7 @@
 export const PRODUCTOS = [
     {
         id: 1,
-        imagen: "/perro-caliente.jpeg",
+        imagen: "perro-caliente.jpeg",
         nombre: "Perro Caliente Normal",
         descripcion: "Hot dog estilo venezolano con salchicha, repollo, papitas crujientes, queso rallado y una combinación de salsas tradicionales.",
         precio: 2000,
