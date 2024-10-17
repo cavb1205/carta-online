@@ -8,12 +8,12 @@ const { title, description, price, image } = Astro.props;
 	<a href="#" class="flex gap-x-5 border-neutral-400 border-b-2 mt-4 p-1 hover:scale-105 md:max-w-md  ">
 		<img src={`/images/${image}`} alt={title} class="w-40 h-40 rounded-lg object-cover" />
 		<div>
-			<h2 class="text-primary font-bold text-xl ">
+			<h2 class="text-primary font-bold text-xl capitalize ">
 				{title}			
 			</h2>
 			<p class="text-sm text-primary">
 				{description}
 			</p>
-			<span class="text-primary font-bold text-sm">$ {price}</span>
+			<span class="text-primary font-bold text-sm">{price}</span>
 		</div>
 	</a>

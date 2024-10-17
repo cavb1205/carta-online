@@ -1,14 +1,21 @@
 ---
-import {PRODUCTOS} from "../data/products.js";
+
 import Card from "../components/Card.astro";
 
+const API_URL = import.meta.env.API_URL;
+const CARTA = "CARTA";
+const response = await fetch(`${API_URL}/${CARTA}`).then((res) => res.json());
+const PRODUCTOS  = response;
+
+//mostrar productos activos
+const PRODUCTOS_ACTIVOS = PRODUCTOS.filter((producto: { estado: string; }) => producto.estado === 'Activo');
 
 
 ---
 
 <section class="flex flex-col md:flex-row md:flex-wrap md:justify-between mt-3 ">
 
-    {PRODUCTOS.map((producto)=>(
+    {PRODUCTOS_ACTIVOS.map((producto: { nombre: string; descripcion: string; precio: string; imagen: string; })=>(
         <Card title={producto.nombre} description={producto.descripcion} price={producto.precio} image={producto.imagen} />
     ))
     }
