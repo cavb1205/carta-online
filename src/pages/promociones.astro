@@ -2,6 +2,7 @@
 ---
 import { object } from 'astro:schema'
 import Footer from '../sections/Footer.astro'
+import NoPromos from '../components/NoPromos.astro'
 
 import Layout from '../layouts/Layout.astro'
 import CardPromos from '../components/CardPromos.astro';
@@ -12,7 +13,7 @@ const PROMOS = "PROMOS";
 const response = await fetch(`${API_URL}/${PROMOS}`).then((res) => res.json());
 const PROMOCIONES  = response;
 const PROMOCIONES_ACTIVAS = PROMOCIONES.filter((promo: { estado: string; }) => promo.estado === 'Activo');
-console.log(PROMOCIONES_ACTIVAS)
+
 ---
 <Layout title="Stefy Food - Promos">
     <section class=" md:max-w-5xl mx-auto px-2 ">
@@ -20,12 +21,15 @@ console.log(PROMOCIONES_ACTIVAS)
         <a href="/"><span class="text-4xl text-primary mx-5 hover:scale-125 hover:opacity-75 inline-block">🔙</span>
         </a>
         <h3 class="text-center text-4xl font-bold text-primary capitalize">Promos</h3>
-        <div class="flex flex-col md:flex-row md:flex-wrap justify-center gap-4 md:gap-x-4 mt-5 mx-2 ">
-            {PROMOCIONES_ACTIVAS.map((promo: { nombre: string; descripcion: string; precio: string; imagen: string; })=>(
-                <CardPromos nombre={promo.nombre} descripcion={promo.descripcion} precio={promo.precio} imagen={promo.imagen} />
-            ))
-            }
-        </div>        
+        {
+            PROMOCIONES_ACTIVAS.length === 0? <NoPromos />:
+            <div class="flex flex-col md:flex-row md:flex-wrap justify-center gap-4 md:gap-x-4 mt-5 mx-2 ">
+                {PROMOCIONES_ACTIVAS.map((promo: { nombre: string; descripcion: string; precio: string; imagen: string; })=>(
+                    <CardPromos nombre={promo.nombre} descripcion={promo.descripcion} precio={promo.precio} imagen={promo.imagen} />
+                ))
+                }
+            </div>        
+        }
         <WhatsAppLink />
         <Footer />
     </section>
